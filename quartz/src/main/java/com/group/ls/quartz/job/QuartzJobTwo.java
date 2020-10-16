@@ -12,7 +12,7 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 @DisallowConcurrentExecution
 public class QuartzJobTwo extends QuartzJobBean {
     @Override
-    protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
-
+    protected void executeInternal(JobExecutionContext context) {
+        System.out.println("QuartzJobTwo" + context.getJobDetail().getKey());
     }
 }

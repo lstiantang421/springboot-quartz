@@ -1,0 +1,26 @@
+server:
+  port: 8072
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.221.253.27:3306/etpobasic_hsw?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: dbn_managers
+    password: PePRBQRKM9@AHkBx1Vh
+  rabbitmq:
+    host: 10.209.11.200
+    port: 5672
+    username: admin
+    password: dbn002385
+  quartz:
+    #相关属性配置
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: clusteredScheduler
+            instanceId: AUTO
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool
+            threadCount: 10
+            threadPriority: 5
+            threadsInheritContextClassLoaderOfInitializingThread: true
