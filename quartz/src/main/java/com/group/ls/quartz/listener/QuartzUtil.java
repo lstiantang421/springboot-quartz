@@ -11,6 +11,12 @@ import org.springframework.stereotype.Service;
 
 /**
  * Quartz定时任务工具类，包含添加定时任务、删除定时任务的操作。
+ * TriggerState状态值
+ * WAITING:等待
+ * PAUSED:暂停
+ * ACQUIRED:正常执行
+ * BLOCKED：阻塞
+ * ERROR：错误
  */
 @Service
 public class QuartzUtil {

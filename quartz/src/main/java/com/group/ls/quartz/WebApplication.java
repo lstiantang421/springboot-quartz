@@ -20,7 +20,7 @@ public class WebApplication {
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(WebApplication.class);
         // 添加了一个listener，用于在spring初始化完成后，执行一段我们自定义的逻辑
-        springApplication.addListeners(new StartupListener());
+//        springApplication.addListeners(new StartupListener());
         springApplication.run(args);
     }
 }

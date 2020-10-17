@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: fix
+    active: dev
   application:
     name: lsSvr-app
   jackson:
